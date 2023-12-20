@@ -2,6 +2,36 @@
 // Skriv din pseudokod innanför nedanstående kommentarsblock
 /*
 
+start 'Split the nota'
+
+let summa = användarinput (heltal)
+let friends = användarinput (heltal)
+let dricks = användariput (decimaltal)
+
+function kontrollera värden
+    if (summa <= 0) || (friends < 1) || (dricks < 0)
+        then print "kontrollera värden" och starta om
+    end if     
+
+    if "dricks" > 0.2
+        print "Mycket generös dricks! Är du säker?" JA/NEJ
+    end if
+end function        
+
+function omräkningsfaktor
+    set variabel "dricksfaktor" = 1
+    if "dricks" > 0
+        then låt "dricksfaktor" = "dricksfaktor" + "dricks"
+    
+    
+end function
+
+function räkna ut
+    set "totalsumma" = (multiplicera "summa" med "dricksfaktor") 
+    set "andel" = ("totalsumma" dividerat med "antal vänner")
+    print "Varje person ska betala 'andel' kr"
+end funcion
+
 
 */
 
