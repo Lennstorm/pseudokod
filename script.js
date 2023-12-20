@@ -42,7 +42,8 @@ end funcion
 function play()
     SET variabel ordbok = [..., ..., ...]; // Innehåller ALLA ord i det engelska språket
     SET variabel startOrd till "FOUR";
-    SET variabel slutordOrd till "FIVE";
+    SET variabel slutOrd till "FIVE";
+    SET variabel antalOrd till 0;
 
 
 end function
@@ -53,5 +54,116 @@ function isOneLetterApart(wordOne, wordTwo)
 
     return diffCount === 1; // returnerar sant om endast en bokstav ändrats, annars falskt
 end function
+
+//RUNDA ETT
+set wordOne = startOrd
+set wordTwo = användarinput (foul)
+
+function spellcheck(wordTwo)
+    if wordTwo is in ordbok && diffCount === 1
+    set wordOne = wordTwo
+        else print "wordTwo saknas i ordlistan eller avviker med mer än en bokstav. Välj ett annat ord!"
+end function    
+
+set antalOrd + 1
+
+funcion slutcheck(wordTwo)
+    if wordTwo === slutOrd
+        print "GRATTIS du klarade spelet på [antalOrd] ord"
+
+//RUNDA TVÅ
+set wordTwo = användarinput (fool)
+
+function spellcheck(wordTwo)
+    if wordTwo is in ordbok && diffCount === 1
+        set wordOne = wordTwo
+        else print "wordTwo saknas i ordlistan eller avviker med mer än en bokstav. Välj ett annat ord!"
+end function    
+
+set antalOrd + 1
+
+funcion slutcheck(wordTwo)
+    if wordTwo === slutOrd
+        print "GRATTIS du klarade spelet på [antalOrd] ord"
+
+//RUNDA TRE
+set wordTwo = användarinput (foot)
+
+function spellcheck(wordTwo)
+    if wordTwo is in ordbok && diffCount === 1
+        set wordOne = wordTwo
+        else print "wordTwo saknas i ordlistan eller avviker med mer än en bokstav. Välj ett annat ord!"
+end function
+
+set antalOrd + 1
+
+funcion slutcheck(wordTwo)
+    if wordTwo === slutOrd
+        print "GRATTIS du klarade spelet på [antalOrd] ord"
+
+
+//RUNDA FYRA
+
+set wordTwo = användarinput (fort)
+
+function spellcheck(wordTwo)
+    if wordTwo is in ordbok && diffCount === 1
+        set wordOne = wordTwo
+        else print "wordTwo saknas i ordlistan eller avviker med mer än en bokstav. Välj ett annat ord!"
+end function
+
+set antalOrd + 1
+
+funcion slutcheck(wordTwo)
+    if wordTwo === slutOrd
+        print "GRATTIS du klarade spelet på [antalOrd] ord"
+
+//RUNDA FEM
+
+set wordTwo = användarinput (fore)
+
+function spellcheck(wordTwo)
+    if wordTwo is in ordbok && diffCount === 1
+        set wordOne = wordTwo
+        else print "wordTwo saknas i ordlistan eller avviker med mer än en bokstav. Välj ett annat ord!"
+end function
+
+set antalOrd + 1
+
+funcion slutcheck(wordTwo)
+    if wordTwo === slutOrd
+        print "GRATTIS du klarade spelet på [antalOrd] ord"
+
+//RUNDA SEX
+
+set wordTwo = användarinput (fire)
+
+function spellcheck(wordTwo)
+    if wordTwo is in ordbok && diffCount === 1
+        set wordOne = wordTwo
+        else print "wordTwo saknas i ordlistan eller avviker med mer än en bokstav. Välj ett annat ord!"
+end function
+
+set antalOrd + 1
+
+funcion slutcheck(wordTwo)
+    if wordTwo === slutOrd
+        print "GRATTIS du klarade spelet på [antalOrd] ord"
+
+//RUNDA SJU
+
+set wordTwo = användarinput (five)
+
+function spellcheck(wordTwo)
+    if wordTwo is in ordbok && diffCount === 1
+        set wordOne = wordTwo
+        else print "wordTwo saknas i ordlistan eller avviker med mer än en bokstav. Välj ett annat ord!"
+end function
+
+set antalOrd + 1
+
+funcion slutcheck(wordTwo)
+    if wordTwo === slutOrd
+        print "GRATTIS du klarade spelet på [antalOrd] ord"
 
 */
