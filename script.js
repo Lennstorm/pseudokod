@@ -37,22 +37,32 @@ end funcion
 
 // VG-Version - Lewis Carroll Word Puzzle
 // Skriv din pseudokod innanför nedanstående kommentarsblock
-/*
+/
 
 function play()
     SET variabel ordbok = [..., ..., ...]; // Innehåller ALLA ord i det engelska språket
     SET variabel startOrd till "FOUR";
     SET variabel slutOrd till "FIVE";
     SET variabel antalOrd till 0;
-
-
+    SET variabel wordOne, wordTwo
 end function
+
+while (wordOne!== slutOrd)
+    wordTwo = användarinput()
+    if (spellcheck(wordTwo))
+        antalOrd ++
+        slutcheck(wordTwo   )
+
+    print "GRATTIS du klarade spelet på [antalOrd] ord"
 
 function isOneLetterApart(wordOne, wordTwo)
     SET variabel diffCount till 0;
 
-
-    return diffCount === 1; // returnerar sant om endast en bokstav ändrats, annars falskt
+    loop kolla [wordOne bokstav n] === [wordTwo bokstav n]
+        if bokstav n !=== bokstav n
+            diffcount ++
+    end loop
+            return diffCount === 1; // returnerar sant om endast en bokstav ändrats, annars falskt
 end function
 
 //RUNDA ETT
@@ -64,6 +74,20 @@ function spellcheck(wordTwo)
     set wordOne = wordTwo
         else print "wordTwo saknas i ordlistan eller avviker med mer än en bokstav. Välj ett annat ord!"
 end function    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 set antalOrd + 1
 
